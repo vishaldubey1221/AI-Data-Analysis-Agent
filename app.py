@@ -5,7 +5,7 @@ import re
 import matplotlib.pyplot as plt
 
 # 1. AI API Setup 
-API_KEY = ["GEMINI_API_KEY"] 
+API_KEY = st.secrets["GEMINI_API_KEY"] 
 client = genai.Client(api_key=API_KEY)
 
 # Page Configuration
